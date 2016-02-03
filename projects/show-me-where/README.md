@@ -3,7 +3,7 @@ Data that contains exact geolocations for cases in the most recent Ebola outbrea
 ## Basic facts about the dataset
 - Source of the data: [A comprehensive database of the geographic spread of past human Ebola outbreaks](http://www.nature.com/articles/sdata201442#data-citations)
 - The data's landing page: [Figshare File](https://figshare.com/articles/Ebola_past_outbreak_geographic_spread_data/1192660)
-- Direct link to the data: [https://ndownloader.figshare.com/files/3230399[(https://ndownloader.figshare.com/files/3230399)
+- Direct link to the data: [https://ndownloader.figshare.com/files/3230399](https://ndownloader.figshare.com/files/3230399)
 - The data format: CSV
 - Number of rows: 118
 
