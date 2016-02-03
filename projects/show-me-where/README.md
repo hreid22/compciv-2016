@@ -6,6 +6,7 @@ Data that contains exact geolocations for cases in the most recent Ebola outbrea
 - Direct link to the data: [https://ndownloader.figshare.com/files/3230399[(https://ndownloader.figshare.com/files/3230399)
 - The data format: CSV
 - Number of rows: 118
+
 ## Description of data fields
 #### UNIQ_ID
 Contains an *integer* that is an identification number starting at 101 and ranging up to 217.
