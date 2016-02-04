@@ -24,7 +24,7 @@ Contains a *text string* which indicates whether this location is a point locati
 Contains a *float* of the latitude coordinate of where the case occurred.
 #### LONG
 Contains a *float* of the longitude coordinate of where the case occurred.
-#### LONG
+#### LOC_NTS
 Contains a *text string* that gives notes on the way the location of an incident case was derived and the uncertainty in the location, if applicable.
 #### SPR_ORDER
 Contains mostly *integers* or a *text string* (NA if not applicable to a certain data point). The purpose of this column is unclear to me.
