@@ -9,3 +9,4 @@ for x in baby_open:
 	count+=nummy
 
 print("There are", count, "babies whose names were recorded in 2014")
+print(type(baby_open))
