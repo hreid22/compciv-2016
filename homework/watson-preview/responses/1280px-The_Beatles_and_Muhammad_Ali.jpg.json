@@ -1,0 +1,22 @@
+{"images":[
+	{"image":"1280px-The_Beatles_and_Muhammad_Ali.jpg",
+	 "scores":[
+		 {"classifier_id":"Engine_Room","name":"Engine_Room","score":0.679529},
+		 {"classifier_id":"Gray","name":"Gray","score":0.671999},
+		 {"classifier_id":"Riot","name":"Riot","score":0.666603},
+		 {"classifier_id":"Big_Group","name":"Big_Group","score":0.665114},
+		 {"classifier_id":"Human","name":"Human","score":0.620697},
+		 {"classifier_id":"People","name":"People","score":0.612381},
+		 {"classifier_id":"Group_of_People","name":"Group_of_People","score":0.611642},
+		 {"classifier_id":"Washer_and_Dryer","name":"Washer_and_Dryer","score":0.602257},
+		 {"classifier_id":"Appliance","name":"Appliance","score":0.601126},
+		 {"classifier_id":"Mixed_Color","name":"Mixed_Color","score":0.60052},
+		 {"classifier_id":"Assembly_Plant","name":"Assembly_Plant","score":0.600135},
+		 {"classifier_id":"Hands","name":"Hands","score":0.596012},
+		 {"classifier_id":"Auto_Factory","name":"Auto_Factory","score":0.594899},
+		 {"classifier_id":"Subway_Interior","name":"Subway_Interior","score":0.589007},
+		 {"classifier_id":"Parade","name":"Parade","score":0.575958},
+		 {"classifier_id":"Military_Parade","name":"Military_Parade","score":0.569422},
+		 {"classifier_id":"Disturbance","name":"Disturbance","score":0.568379},
+		 {"classifier_id":"Black","name":"Black","score":0.540143}]}]
+}

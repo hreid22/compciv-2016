@@ -1,0 +1,15 @@
+{"images":[
+	{"image":"food-ice-cream.jpg",
+	 "scores":[
+		 {"classifier_id":"Amphibian","name":"Amphibian","score":0.669824},
+		 {"classifier_id":"Frog","name":"Frog","score":0.610064},
+		 {"classifier_id":"Eating","name":"Eating","score":0.606033},
+		 {"classifier_id":"Bird","name":"Bird","score":0.604436},
+		 {"classifier_id":"Outdoors","name":"Outdoors","score":0.598565},
+		 {"classifier_id":"Scene","name":"Scene","score":0.597759},
+		 {"classifier_id":"Cake","name":"Cake","score":0.590489},
+		 {"classifier_id":"Track_and_Field","name":"Track_and_Field","score":0.550221},
+		 {"classifier_id":"Track_Scene","name":"Track_Scene","score":0.541265},
+		 {"classifier_id":"Nature_Scene","name":"Nature_Scene","score":0.540592},
+		 {"classifier_id":"Activity","name":"Activity","score":0.514316}]}]
+}

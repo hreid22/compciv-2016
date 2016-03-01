@@ -1,0 +1,20 @@
+{"images":[
+	{"image":"Fireworks_DetroitWindsorIntlFreedomFest.jpg",
+	 "scores":[
+		 {"classifier_id":"Fireworks","name":"Fireworks","score":0.785955},
+		 {"classifier_id":"Fireworks","name":"Fireworks","score":0.785955},
+		 {"classifier_id":"Fireworks","name":"Fireworks","score":0.756476},
+		 {"classifier_id":"Fireworks","name":"Fireworks","score":0.756476},
+		 {"classifier_id":"Sky_Scene","name":"Sky_Scene","score":0.7488},
+		 {"classifier_id":"Beverage","name":"Beverage","score":0.688045},
+		 {"classifier_id":"Dancing","name":"Dancing","score":0.64445},
+		 {"classifier_id":"Candle","name":"Candle","score":0.636212},
+		 {"classifier_id":"Performing","name":"Performing","score":0.631233},
+		 {"classifier_id":"Closet_or_Cupboard","name":"Closet_or_Cupboard","score":0.627927},
+		 {"classifier_id":"Closet","name":"Closet","score":0.616086},
+		 {"classifier_id":"Bear","name":"Bear","score":0.607831},
+		 {"classifier_id":"Dish_Washer","name":"Dish_Washer","score":0.605672},
+		 {"classifier_id":"Eatery_Space","name":"Eatery_Space","score":0.598968},
+		 {"classifier_id":"Clothing_Store","name":"Clothing_Store","score":0.573632},
+		 {"classifier_id":"Big_Group","name":"Big_Group","score":0.554029}]}]
+}

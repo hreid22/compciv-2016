@@ -1,0 +1,19 @@
+{"images":[
+	{"image":"SlothDWA.jpg",
+	 "scores":[
+		 {"classifier_id":"Grasshopper","name":"Grasshopper","score":0.729229},
+		 {"classifier_id":"Snake","name":"Snake","score":0.691718},
+		 {"classifier_id":"Frog","name":"Frog","score":0.671428},
+		 {"classifier_id":"Bird","name":"Bird","score":0.656271},
+		 {"classifier_id":"Greenery","name":"Greenery","score":0.627562},
+		 {"classifier_id":"Green","name":"Green","score":0.60848},
+		 {"classifier_id":"Outdoors","name":"Outdoors","score":0.566636},
+		 {"classifier_id":"Child","name":"Child","score":0.549348},
+		 {"classifier_id":"Animal_Tending","name":"Animal_Tending","score":0.543001},
+		 {"classifier_id":"Scene","name":"Scene","score":0.527523},
+		 {"classifier_id":"Climbing","name":"Climbing","score":0.516801},
+		 {"classifier_id":"Ball_Pit","name":"Ball_Pit","score":0.51303},
+		 {"classifier_id":"Fox_Hunting","name":"Fox_Hunting","score":0.502563},
+		 {"classifier_id":"Girl","name":"Girl","score":0.50217},
+		 {"classifier_id":"Biathlon","name":"Biathlon","score":0.50094}]}]
+}

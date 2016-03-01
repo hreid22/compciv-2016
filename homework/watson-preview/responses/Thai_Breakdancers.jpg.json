@@ -1,0 +1,17 @@
+{"images":[
+	{"image":"Thai_Breakdancers.jpg",
+	 "scores":[
+		 {"classifier_id":"Flamingo","name":"Flamingo","score":0.638499},
+		 {"classifier_id":"Performing","name":"Performing","score":0.624304},
+		 {"classifier_id":"Basketball","name":"Basketball","score":0.588133},
+		 {"classifier_id":"Clothing","name":"Clothing","score":0.575751},
+		 {"classifier_id":"Synchronized_Swimming","name":"Synchronized_Swimming","score":0.572553},
+		 {"classifier_id":"Snooker","name":"Snooker","score":0.568953},
+		 {"classifier_id":"Indoors","name":"Indoors","score":0.535124},
+		 {"classifier_id":"Kangaroo","name":"Kangaroo","score":0.53121},
+		 {"classifier_id":"Activity_Facility","name":"Activity_Facility","score":0.527148},
+		 {"classifier_id":"Performance_Space","name":"Performance_Space","score":0.526647},
+		 {"classifier_id":"Face","name":"Face","score":0.51514},
+		 {"classifier_id":"Casino","name":"Casino","score":0.510482},
+		 {"classifier_id":"Human","name":"Human","score":0.501889}]}]
+}
