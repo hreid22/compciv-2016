@@ -15,13 +15,16 @@ for response in glob(os.path.join(response_directory, '*.json')):
 	image = hoo['images'][0]
 	imgname = image['image']
 	html_file.write("<h2>%s</2h>" % imgname)
-	imagefilename = os.path.join('*', picture_directory, imgname)
-	html_file.write('<li>'+'<img src="%s">' % imagefilename + '</li>')
+	imagefilename = os.path.join(picture_directory, imgname)
+	html_file.write('<img src="%s">' % imagefilename)
+	html_file.write('<ol>')
 	for x in range(len(image['scores'])):
 		mylist=[]
 		mylist.append('<li>' + image['scores'][x]['name']+ "---" + str(image['scores'][x]['score'])+"</li>")
 		for y in range(len(mylist)):
 			html_file.write(mylist[y])
+	html_file.write('</ol>')
+
 
 html_file.close()
 
