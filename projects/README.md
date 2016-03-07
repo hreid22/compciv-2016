@@ -7,26 +7,26 @@ This data set contains information on every medal winner in a summer or winter o
 - The data format: CSV
 - Number of rows: 8619
 ## Description of data fields
-####Athlete
+#### Athlete
 *String* variable containing first and last name of athlete
-####Age
+#### Age
 *String* variable indicating age of athlete at time of medal victory. Can be easily converted into *integer*.
-####Country
+#### Country
 Country which the athlete was representing when medal was won. *String* variable.
-####Year
+#### Year
 *String* variable (easily convertable to *integer*) of the year of the olympic games in which the medal was won.
-####Closing Ceremony Date
+#### Closing Ceremony Date
 *String* variable in format MM/DD/YYYY.
-####Sport
+#### Sport
 *String* variable indicating the year of the Olympic Games in which the medal was won
-####Gold Medals
+#### Gold Medals
 *String* (easily convertable to int) variable indicating the number of gold medals won by the athlete in this specific Olympic games. 0 indicates the athlete won no gold medals.
-####Silver Medals
+#### Silver Medals
 *String* (easily convertable to int) variable indicating the number of silver medals won by the athlete in this specific Olympic games. 0 indicates the athlete won no silver medals.
-####Bronze Medals
+#### Bronze Medals
 *String* (easily convertable to int) variable indicating the number of bronze medals won by the athlete in this specific Olympic games. 0 indicates the athlete won no bronze medals.
-####Total Medals
+#### Total Medals
 *String* (easily convertable to int) variable indicating the total number of medals won by the athlete in this specific Olympic games. This field is never equal to 0.
 
-###Previous Classification Attempts
+### Previous Classification Attempts
 My digging did not turn up other attempts to run this data through a gender classifer based on name. HOwever, gender classification has been a contentious issue at past major sporting events and the Olympics after female athletes have been accused of "masculine physique" and "high levels of testosterone." See past controversies [NYT: You Say You're a Woman? That Should Be Enough](http://www.nytimes.com/2012/06/18/sports/olympics/olympic-sex-verification-you-say-youre-a-woman-that-should-be-enough.html?_r=0)
