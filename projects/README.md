@@ -6,6 +6,7 @@ This data set contains information on every medal winner in a summer or winter o
 - Direct link to the data: [http://ckan.whythawk.com/km/dataset/4e353550-9380-4be1-adc2-c02a5c1116fb/resource/79b3b3f2-a3a2-48c0-8526-e01405bd2f73/download/olympicathletes0.csv](http://ckan.whythawk.com/km/dataset/4e353550-9380-4be1-adc2-c02a5c1116fb/resource/79b3b3f2-a3a2-48c0-8526-e01405bd2f73/download/olympicathletes0.csv)
 - The data format: CSV
 - Number of rows: 8619
+
 ## Description of data fields
 #### Athlete
 *String* variable containing first and last name of athlete
