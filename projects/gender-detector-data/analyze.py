@@ -211,3 +211,17 @@ print("The names of the American athletes not recognized by the US SS Data train
 for key in olydata.keys():
 	if olydata[key]['gender'] == 'NA' and olydata[key]['Country']== "United States":
 		print(olydata[key]['usable_name'])
+
+#Do different sexes win different total numbers of medals?
+medalM=[]
+medalF=[]
+for key in olydata.keys():
+	if olydata[key]['gender'] == 'M':
+		medalM.append(olydata[key]['Total Medals'])
+	if olydata[key]['gender'] == 'F':
+		medalF.append(olydata[key]['Total Medals'])
+avgM=sum(medalM)/len(medalM)
+avgF=sum(medalF)/len(medalF)
+print("The average man wins", avgM, "medals per Olympic game.")
+print("The average woman wins", avgF "medals per Olympic game.")
+
