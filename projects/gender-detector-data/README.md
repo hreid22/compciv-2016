@@ -66,48 +66,48 @@
 7. analyze.py -- This script runs a series of analyses on the classified json of Olympic athletes. See below for more detail on the output of the three analyses.
 ##Analysis
 * My first analysis looks at what proportion of medal winners that are male and female in 4 age brackets. The output looks like:
--In these Olympics (2000-2012) athletes ages 15-61 were medal winners.
--The ratio of women and men in these various age categories differed.
--Of athletes 20 or younger there were:
--272 men and 411 women thus 39.8% of the medal winners were men.
--Of athletes 20-30 years old there were:
--2828 men and 2369 women thus 54.4% of the medal winners were men.
--Of athletes 30-40 years old there were:
--755 men and 515 women thus 59.4% of the medal winners were men.
--Of over 40 years old there were:
--68 men and 39 women thus 63.6% of the medal winners were men.
+- In these Olympics (2000-2012) athletes ages 15-61 were medal winners.
+- The ratio of women and men in these various age categories differed.
+- Of athletes 20 or younger there were:
+- 272 men and 411 women thus 39.8% of the medal winners were men.
+- Of athletes 20-30 years old there were:
+- 2828 men and 2369 women thus 54.4% of the medal winners were men.
+- Of athletes 30-40 years old there were:
+- 755 men and 515 women thus 59.4% of the medal winners were men.
+- Of over 40 years old there were:
+- 68 men and 39 women thus 63.6% of the medal winners were men.
 * My second analysis expands on the first by asking what medals are male and female athletes winning at different ages (gold, silver, bronze e.g.). I do this by normalizing the total number of medals won in each category by the by male or female athletes competing in that category. For instance the first segment of output looks like:
--Percentage breakdown of medals by age:
--Age <= 20
--Gold   Sliver   Bronze
--M:        
--0.37      0.3     0.32
-* This indicates that for male medal winners less than 20 years old 37% of the medals were gold medals, 30% were silver and 32% were bronze. THe full output:
-Percentage breakdown of medals by age:
-Age <= 20
-Gold   Sliver   Bronze
-M:        
-0.37      0.3     0.32
-F:        
-0.36     0.32     0.31
-20 < Age <= 30
-Gold   Sliver   Bronze
-M:        
-0.34     0.32     0.34
-F:        
-0.31     0.33     0.35
-30 < Age <= 40
-Gold   Sliver   Bronze
-M:        
-0.31     0.36     0.33
-F:        
-0.36     0.31     0.33
-Age > 40
-Gold   Sliver   Bronze
-M:        
-0.35     0.32     0.33
-F:        
-0.24     0.36      0.4
+- Percentage breakdown of medals by age:
+- Age <= 20
+- Gold   Sliver   Bronze
+- M:        
+- 0.37      0.3     0.32
+* This indicates that for male medal winners less than 20 years old 37% of the medals were gold medals, 30% were silver and 32% were bronze. The full output:
+- Percentage breakdown of medals by age:
+- Age <= 20
+- Gold   Sliver   Bronze
+- M:        
+- 0.37      0.3     0.32
+- F:        
+- 0.36     0.32     0.31
+- 20 < Age <= 30
+- Gold   Sliver   Bronze
+- M:        
+- 0.34     0.32     0.34
+- F:        
+- 0.31     0.33     0.35
+- 30 < Age <= 40
+- Gold   Sliver   Bronze
+- M:        
+- 0.31     0.36     0.33
+- F:        
+- 0.36     0.31     0.33
+- Age > 40
+- Gold   Sliver   Bronze
+- M:        
+- 0.35     0.32     0.33
+- F:        
+- 0.24     0.36      0.4
 * Based on this data women seem to have a steeper decline in performance than men, although this is most pronounced only in the last age bracket.
 * I then look at which countries are sending the youngest medal winners (proportional ot total medal winners) and if these countries are the same between men and women. I find the following:
 
