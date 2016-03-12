@@ -32,21 +32,21 @@ for y in range(len(olydata)):
 
 
 
-namecaller={}
-for x in range(len(olydata)):
-	call=olydata[x]['usable_name']
-	namecaller[call]=olydata[x]
+#namecaller={}
+#for x in range(len(olydata)):
+#	call=olydata[x]['usable_name']
+#	namecaller[call]=olydata[x]
 from gender import detect_gender
 
-for athlete in namecaller.keys():
-	result=detect_gender(athlete)
+for x in range(len(olydata)):
+	result=detect_gender(olydata[x]['usable_name'])
 	ratio=result['ratio']
 	gender=result['gender']
-	namecaller[athlete]['ratio']=ratio
-	namecaller[athlete]['gender']=gender
+	olydata[x]['ratio']=ratio
+	olydata[x]['gender']=gender
 
 olympicpath=join(datadirect, 'olympic_athletes_classified.json')
 writejson=open(olympicpath, 'w')
-json.dump(namecaller, writejson, indent=2)
+json.dump(olydata, writejson, indent=2)
 print("Writing to olympic_athletes_classified.json file.")
 
