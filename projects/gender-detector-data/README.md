@@ -40,6 +40,7 @@
 	* I am also limited by the preponderence of names in this dataset that are not recognized by my gender detector. The fact that the Olympics inherently have a diverse set of names (as a diverse set of athletes of all different nationalities compete) means that a significant portion of my names were classified as gender 'NA' by the gender detector. This was especially prominent for the China and the Netherlands.
 	* Some athletes were also included in the dataset by either only a first intial or a nickname (ie Cat or A.). Unfortunately I could not generate their true first names based on this information thus they were also classified as gender "NA" using the gender detector.
 	* Finally this data set includes only medal winners. In future analyses it would be useful to work with a larger dataset of all Olympic athletes to get a more rigorous comparison of differences between the sexes, not just the medal winners of each sex.
+
 ## Past Research
 * The Atlantic [We Thought Female Athletes Were Catching Up to Men, but They're Not](http://www.theatlantic.com/technology/archive/2012/08/we-thought-female-athletes-were-catching-up-to-men-but-theyre-not/260927/)
 	* Women and men clearly have different levels that they are physically able to attain in sports (the Atlantic article points to blood oxygen and hemoglobin levels as main determinants). However, for me this still left the question of at what ages men and women are reaching their different peaks.
@@ -54,6 +55,7 @@
 * A series of articles have been published in the past in Nature [Will women soon outrun men](http://www.nature.com/nature/journal/v355/n6355/abs/355025a0.html), and [Athletics:  Momentous sprint at the 2156 Olympics?](http://www.nature.com/nature/journal/v431/n7008/full/431525a.html) as well as the BMJ [Women will do it in the long run](http://bjsm.bmj.com/content/39/7/410.full).
 	* These articles mainly argue about the likelihood of women attaining mens' records in various sports/distances of running. However many of the assertions made in the articles have been disproved by the plateau-ing of women's performance over time.
 * It is clear that the participation of women in athletics has historically been a contentious issue. For the 32 years when women's long and middle distance running events were eliminated from the Olympics (fully reinstated in 2008) the justification was that the distance was simply too grueling for women's bodies. More recently we have seen a dispute arise over what defines a woman as a woman such that they can compete in female athletic events. While my analysis of this Olympic data using my US SS-trained gender detector is unable to comment on either women's biology at a scientific level, or give the definitive sex of athletes like Caster Semenya, it provides intersting analysis to complement this interesting and often debated subject. I focus on determinants like age and country of origin which I will further discuss in my analysis section.
+
 ## How to Use It
 * Clone the repo from my github account
 * Run the scripts in this order:
@@ -64,6 +66,7 @@
 5. gender.py -- This script contains the gender detector built off of the US SSA data. For any name fed into detect_gender(name) it returns either the US SSA dictionary of that name (ie "Michael") with the fields as defined by the wrangle_gender_data.py script or if the name is not found in the US SSA it returns {'name': the name, 'gender': 'NA', 'ratio': 'None', 'males': 'None', 'females': 'None', 'total': 0}
 6. classify.py -- This script creates a new json file of Olympic athletes with gender assigned by the detect_gender() function. It formats the names of the athletes in the Olympic csv to be recognized by the gender detector. The new json file is a list of dictionaries with each dictionary containing the same keys as the original Olympic csv with the addition of a "usable_name" key, a "ratio" key, and a "gender" key.
 7. analyze.py -- This script runs a series of analyses on the classified json of Olympic athletes. See below for more detail on the output of the three analyses.
+
 ##Analysis
 * My first analysis looks at what proportion of medal winners are male and female in 4 age brackets. The output looks like:
 	- In these Olympics (2000-2012) athletes ages 15-61 were medal winners.
