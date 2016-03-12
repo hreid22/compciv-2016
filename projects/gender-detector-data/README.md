@@ -9,11 +9,11 @@
 	* As the list of Olympic medalists contains a diverse name set (athletes are from all around the world) I am also interested in which countries have the most names that the gender detector does not recognize (returns 'gender'="NA" e.g.)
 * Brief Analysis
 	* Men and women peak at different times. The share of woman medalists falls with age (while the male share rises).
-	* !!!!
+	* Females appear to win fewer gold medals as a percentage of total medals as they age.
 	* Different coutries have the youngest successful (at least one medal) athletes for men and women. 
-	* The Netherlands sends the most medalists who win medals with names that are not in the US SS data base.
-	* Interestingly, there are 26 US medalists who have names were not recorded in the US social security data, which could indicate that these athletes are immigrants competing on behalf of the US (as well as any American athletes with nicknames or abbreviations not covered in the US SSA.)
-	* 
+	* China sends the most medalists who win medals with names that are not in the US SS data base.
+	* Interestingly, there are 37 US medalists who have names were not recorded in the US social security data, which could indicate that these athletes are immigrants competing on behalf of the US (as well as any American athletes with nicknames or abbreviations not covered in the US SSA.)
+	* The most decorated athlete at these Olympics is a man.
 
 ## Methodology
 * Dataset 
@@ -66,57 +66,118 @@
 7. analyze.py -- This script runs a series of analyses on the classified json of Olympic athletes. See below for more detail on the output of the three analyses.
 ##Analysis
 * My first analysis looks at what proportion of medal winners that are male and female in 4 age brackets. The output looks like:
-- In these Olympics (2000-2012) athletes ages 15-61 were medal winners.
-- The ratio of women and men in these various age categories differed.
-- Of athletes 20 or younger there were:
-- 272 men and 411 women thus 39.8% of the medal winners were men.
-- Of athletes 20-30 years old there were:
-- 2828 men and 2369 women thus 54.4% of the medal winners were men.
-- Of athletes 30-40 years old there were:
-- 755 men and 515 women thus 59.4% of the medal winners were men.
-- Of over 40 years old there were:
-- 68 men and 39 women thus 63.6% of the medal winners were men.
+	- In these Olympics (2000-2012) athletes ages 15-61 were medal winners.
+	- The ratio of women and men in these various age categories differed.
+	- Of athletes 20 or younger there were:
+	- 272 men and 411 women thus 39.8% of the medal winners were men.
+	- Of athletes 20-30 years old there were:
+	- 2828 men and 2369 women thus 54.4% of the medal winners were men.
+	- Of athletes 30-40 years old there were:
+	- 755 men and 515 women thus 59.4% of the medal winners were men.
+	- Of over 40 years old there were:
+	- 68 men and 39 women thus 63.6% of the medal winners were men.
 * My second analysis expands on the first by asking what medals are male and female athletes winning at different ages (gold, silver, bronze e.g.). I do this by normalizing the total number of medals won in each category by the by male or female athletes competing in that category. For instance the first segment of output looks like:
-- Percentage breakdown of medals by age:
-- Age <= 20
-- Gold   Sliver   Bronze
-- M:        
-- 0.37      0.3     0.32
+	- Percentage breakdown of medals by age:
+	- Age <= 20
+	- Gold   Sliver   Bronze
+	- M:        
+	- 0.37      0.3     0.32
 * This indicates that for male medal winners less than 20 years old 37% of the medals were gold medals, 30% were silver and 32% were bronze. The full output:
-- Percentage breakdown of medals by age:
-- Age <= 20
-- Gold   Sliver   Bronze
-- M:        
-- 0.37      0.3     0.32
-- F:        
-- 0.36     0.32     0.31
-- 20 < Age <= 30
-- Gold   Sliver   Bronze
-- M:        
-- 0.34     0.32     0.34
-- F:        
-- 0.31     0.33     0.35
-- 30 < Age <= 40
-- Gold   Sliver   Bronze
-- M:        
-- 0.31     0.36     0.33
-- F:        
-- 0.36     0.31     0.33
-- Age > 40
-- Gold   Sliver   Bronze
-- M:        
-- 0.35     0.32     0.33
-- F:        
-- 0.24     0.36      0.4
+	- Percentage breakdown of medals by age:
+	- Age <= 20
+	- Gold   Sliver   Bronze
+	- M:        
+	- 0.37      0.3     0.32
+	- F:        
+	- 0.36     0.32     0.31
+	- 20 < Age <= 30
+	- Gold   Sliver   Bronze
+	- M:        
+	- 0.34     0.32     0.34
+	- F:        
+	- 0.31     0.33     0.35
+	- 30 < Age <= 40
+	- Gold   Sliver   Bronze
+	- M:        
+	- 0.31     0.36     0.33
+	- F:        
+	- 0.36     0.31     0.33
+	- Age > 40
+	- Gold   Sliver   Bronze
+	- M:        
+	- 0.35     0.32     0.33
+	- F:        
+	- 0.24     0.36      0.4
 * Based on this data women seem to have a steeper decline in performance than men, although this is most pronounced only in the last age bracket.
 * I then look at which countries are sending the youngest medal winners (proportional ot total medal winners) and if these countries are the same between men and women. I find the following:
-
+	- The top 5 countries with the most young female medalists proportional to total female medalists of that nationality in this selection of Olympic games were:
+	- Moldova where 100.0%  of female medalists were <=20 years old.
+	- Georgia where 100.0%  of female medalists were <=20 years old.
+	- Zimbabwe where 50.0%  of female medalists were <=20 years old.
+	- Turkey where 50.0%  of female medalists were <=20 years old.
+	- North Korea where 40.0%  of female medalists were <=20 years old.
+	- The top 5 countries with the most young male medalists proportional to total male medalists of that nationality in this selection of Olympic games were:
+	- Botswana where 100.0%  of male medalists were <=20 years old.
+	- Cameroon where 50.0%  of male medalists were <=20 years old.
+	- Indonesia where 40.0%  of male medalists were <=20 years old.
+	- Nigeria where 35.29%  of male medalists were <=20 years old.
+	- Armenia where 28.57%  of male medalists were <=20 years old.
 * As a check on the limitations of my data I also looked at which countries had the highest number of medalists' names not recognized by the gender detector. I find that the Netherlands leads followed by Japan and Cuba. The full list of the top 10 is below:
-
+	- The top 10 countries with the most names not recognized by the US SS Data trained gender detector were:
+	- China with 171 athletes with names not recognized by US SS data.
+	- Netherlands with 109 athletes with names not recognized by US SS data.
+	- South Korea with 75 athletes with names not recognized by US SS data.
+	- Russia with 71 athletes with names not recognized by US SS data.
+	- Cuba with 60 athletes with names not recognized by US SS data.
+	- Brazil with 57 athletes with names not recognized by US SS data.
+	- Japan with 56 athletes with names not recognized by US SS data.
+	- Finland with 50 athletes with names not recognized by US SS data.
+	- Norway with 46 athletes with names not recognized by US SS data.
+	- United States with 37 athletes with names not recognized by US SS data.
 * Interestingly, as the United States was one of the countries with the largest absolute number of unrecognized names (yet the detector is built on data derived from the US SSA database) I wanted to know what these names were.
-
-* As one can see from the above list some of these names were excluded as they are abbreviations or intials not recognized by the US SSA data. Others may be of athletes who were immigrants to the United States or who go by a nickname.
+	- The names of the American athletes not recognized by the US SS Data trained gender detector were:
+	- Klete
+	- Klete
+	- J.
+	- Beezie
+	- J.
+	- Tayyiba
+	- Lloy
+	- Tayyiba
+	- Ogonna
+	- Breeja
+	- Klete
+	- Ritz
+	- Rhi
+	- B.
+	- Staciana
+	- J.
+	- Tairia
+	- Cat
+	- Tairia
+	- Cat
+	- Pease
+	- A.
+	- Guard
+	- Cat
+	- Keeth
+	- Beezie
+	- Seimone
+	- Swin
+	- Seimone
+	- Swin
+	- Manteo
+	- Hyleas
+	- Bershawn
+	- Meb
+	- Moushaumi
+	- Chryste
+	- Nanceen
+* As one can see from the above list some of these names were excluded as they are abbreviations or intials not recognized by the US SSA data. Others may be of athletes who were immigrants to the United States or who go by a nickname. This list also brings back one of the limitations of the data set in that the same medalist is included multiple times if they won medals at multiple Olympics. For instance Klete in the list above.
 * As a last test I look at the most medals won by an individual female versus an individual male athlete in any single Olympics. 
+	- The most medals won by one male athlete in any Olympics from 2000-2012 was 8
+	- The most medals won by one female athlete in any Olympics from 2000-2012 was 6
+* Thus the most decorated female athlete is less decorated than the most decorated male athlete in these Olympics.
 
 
 
